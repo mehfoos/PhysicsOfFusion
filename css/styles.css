@@ -1,0 +1,75 @@
+/* Basic Styles */
+html {
+    font-size: 100%; /* User font size */
+    line-height: 1.5rem; /* relative line spacing */
+    box-sizing: border-box; /* To make width height include padding and border*/
+    font-family: 'Averia Sans Libre', sans-serif; /* Global font */
+    height: 100%; /* Reference height for other objects */
+}
+
+body {
+    /*margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    max-width: 1400px;*/
+}
+
+/* Heading 1 Style */
+h1 {
+    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+}
+h2 {
+    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+}
+h3 {
+    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+}
+
+img {
+    max-width: 100%; /* Make width limit to screen size */
+    height: auto; /* Auto size to preserve aspect ratio */
+    /* display: block; */
+}
+
+/* Logo Style */
+.titleHeading {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Wrap content around if there's no space */
+    justify-content: space-between; /* Space content evenly */
+    align-items: center;
+}
+.titleHeading a {
+    text-decoration: none; /* Remove underline for link */
+    color: #000; /* Set to black colour */
+    font-weight:bold; /* Make it bold */
+    text-align: center;
+}
+.titleHeading img{
+    max-height: 5rem;
+}
+
+/* Navigation menu items style */
+.nav-menu {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    list-style:none; /* Remove bullet points for list */
+    display: flex; /* Use Flexible Box module for layout */ 
+    flex-wrap: wrap; /* Wrap content around if there's no space */
+    justify-content: space-evenly; /* Space content evenly */
+    padding: 1rem;
+}
+.nav-menu a {
+    text-decoration: none; /* Remove underline for link */
+    color: navy; /* Set to black colour */
+    font-weight:bold; /* Make it bold */
+    font-family: 'Averia Serif Libre', serif; 
+    border-bottom:  1px solid transparent;
+    padding: 0.1rem;
+    transition: all ease 0.5s
+}
+.nav-menu a:hover {
+    border-bottom:  1px solid black;
+    color: blue; /* Set to black colour */
+    transition: all ease 0.5s
+}
