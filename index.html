@@ -1,6 +1,15 @@
 <!DOCTYPE html>
+<!-- 
+    Author: Mehfoos
+    Last Major Update: 2022
+    Description: "Word of Human" wesbite's main page.
+-->
 <html lang="en-GB">
+  <!--
+    Head
+-->
   <head>
+    <!-- Metadata title -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Word of Human</title>
@@ -8,122 +17,104 @@
       name="description"
       content="Notes on scientific problems (Nuclear Fusion) and moral codes"
     />
-    <!-- Google Fonts Link -->
-    <div>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap"
-        rel="stylesheet"
-      />
-    </div>
 
     <!-- CSS link -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ****** faviconit.com favicons ****** -->
-    <div>
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="196x196"
-        href="/favicon/favicon-192.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="160x160"
-        href="/favicon/favicon-160.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="96x96"
-        href="/favicon/favicon-96.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="64x64"
-        href="/favicon/favicon-64.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon/favicon-32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon/favicon-16.png"
-      />
-      <link rel="apple-touch-icon" href="/favicon/favicon-57.png" />
-      <link
-        rel="apple-touch-icon"
-        sizes="114x114"
-        href="/favicon/favicon-114.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="72x72"
-        href="/favicon/favicon-72.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="144x144"
-        href="/favicon/favicon-144.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="60x60"
-        href="/favicon/favicon-60.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="120x120"
-        href="/favicon/favicon-120.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="76x76"
-        href="/favicon/favicon-76.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="152x152"
-        href="/favicon/favicon-152.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicon/favicon-180.png"
-      />
-      <meta name="msapplication-TileColor" content="#FFFFFF" />
-      <meta name="msapplication-TileImage" content="/favicon/favicon-144.png" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-    </div>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="/favicon/favicon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="160x160"
+      href="/favicon/favicon-160.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicon/favicon-96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="/favicon/favicon-64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16.png"
+    />
+    <link rel="apple-touch-icon" href="/favicon/favicon-57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/favicon/favicon-114.png"
+    />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/favicon-72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/favicon/favicon-144.png"
+    />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/favicon/favicon-120.png"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/favicon-76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicon/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/favicon-180.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/favicon/favicon-144.png" />
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
   </head>
 
+  <!--
+    Body
+  -->
   <body>
     <header>
       <div class="titleHeading">
-        <img src="/favicon/favicon-310.png" alt="Logo" />
+        <a href="/index.html"
+          ><img src="/favicon/favicon-310.png" alt="Logo"
+        /></a>
         <h1>
           <a href="/index.html">WORD OF HUMAN</a>
         </h1>
@@ -135,12 +126,12 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item">
-            <a href="/LifeManual/index.html">Life Manual</a>
+            <a href="/LifeManual">Life Manual</a>
           </li>
           <li class="nav-item">
-            <a href="/NuclearFusion/index.html">Nuclear Fusion</a>
+            <a href="/NuclearFusion">Nuclear Fusion</a>
           </li>
-          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </header>
@@ -148,54 +139,71 @@
     <main>
       <h1>Hello There!</h1>
       <p>
-        This website is a collection of referenced information and personal
-        thoughts regarding some of the scientific problems, engineering
-        opportunities and moral values that I find interesting.
+        This website presents information on some of the topics that I find
+        interesting.
       </p>
-      <h2>Intent</h2>
       <p>
         I'm convinced that the topics covered on this website, if solved or
         developed further, has the potential to make the world a better place.
-        Specifically in terms of quality of life (perhaps HDI is a reasonable
-        proxy), and allowing humans to have more technologically advanced and
-        humane civilisaiton. There are many such topics, but I've narrowed down
-        to a few that I am most passionate about at this stage.
+        Specifically in terms of quality of life (perhaps
+        <a
+          href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI"
+          >HDI</a
+        >
+        is a reasonable proxy), and allowing humans to progress to a more
+        technologically advanced and humane civilisation. There are many such
+        topics, but I've narrowed down to a few that I am most passionate about
+        at this stage.
       </p>
+      <br />
+      <h2>Intent</h2>
       <p>
         My hope is that the content here serves the audience in such a way that
         it inspires them to work on them and contribute to solving/developing
         them.
       </p>
+      <p>
+        While there are many excellent resources (some of which I reference in
+        the content) on these topics, I wanted to present the topics freely, in
+        a manner I prefer, and interlace some of my personal thoughts or
+        annotations where appropriate.
+      </p>
+      <p>
+        The final intent of this effort is so that I can better understand the
+        topics myself, by presenting it to others (Learning by teaching).
+      </p>
+      <br />
       <h2>Website layout and implementation</h2>
       <p>
         The navigation links at the top take you to the home-page for the
-        topics. The content is arranged in a hierarchial manner, generally, so
-        the navigation links below should help guide with intended flow of
-        content consumption. However, this is a subjective preference, and you
-        can use the table of contents to serve you the way you desire.
+        topics. The content is arranged in a hierarchical manner (tree),
+        generally, so the navigation links below should help guide with intended
+        flow of content consumption. However, this is a subjective preference,
+        and you can use the table of contents to serve you the way you desire.
+        There may be multiple tables of contents, where the hierarchy is
+        arranged differently (categorised perhaps by areas of physics,
+        reliability of information, etc.).
       </p>
       <p>
-        You can usually separate conventionally accepted information and the
-        author's opinion/speculation by checking the references or links. Some
-        of the content is explicitly marked with different font style to help
-        distinguish between the two.
+        You can usually distinguish between conventionally accepted information
+        and the author's annotations/opinion/speculation by checking the
+        references or links. Some of the content is explicitly marked with
+        different font styles to help distinguish between the two.
       </p>
       <p>
         The vast majority of the website content is just html and css, with the
-        intent widen reach and minimise distractions from the content.
+        intent to widen reach and minimise distractions from the content.
         Calculators and scripts may be present on certain pages, for
         demonstrational or educational purposes.
       </p>
+      <br />
     </main>
     <footer>
       <nav>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html">Prev</a></li>
-          <li class="nav-item"><a href="index.html">Up</a></li>
-          <li class="nav-item"><a href="index.html">Next</a></li>
-          <li class="nav-item">
-            <a href="disclaimer.html">Disclaimer & Copyright information</a>
-          </li>
+          <li class="nav-disable"><a>Prev</a></li>
+          <li class="nav-disable"><a>Up</a></li>
+          <li class="nav-disable"><a>Next</a></li>
           <li class="nav-item">
             <a href="disclaimer.html">Disclaimer & Copyright information</a>
           </li>
