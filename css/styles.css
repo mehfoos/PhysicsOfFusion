@@ -9,32 +9,83 @@ html {
     font-size: 100%; /* User font size */
     line-height: 1.5rem; /* relative line spacing */
     box-sizing: border-box; /* To make width height include padding and border*/
-    font-family: 'Averia Sans Libre', sans-serif; /* Global font */
+    font-family: 'Averia Serif Libre', Times, serif; /* Global font */
     height: 100%; /* Reference height for other objects */
 }
 
 body {
-    /*margin: 0 auto;
     padding: 0;
+    /*margin: 0 auto;    
     height: 100%;
     max-width: 1400px;*/
 }
 
 /* Heading 1 Style */
 h1 {
-    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+    font-family: 'Averia Serif Libre', Times, serif; /* Choose Serif version of font */
 }
 h2 {
-    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+    font-family: 'Averia Serif Libre', Times, serif; /* Choose Serif version of font */
 }
 h3 {
-    font-family: 'Averia Serif Libre', sans-serif; /* Choose Serif version of font */
+    font-family: 'Averia Serif Libre', Times, serif; /* Choose Serif version of font */
 }
 
 img {
     max-width: 100%; /* Make width limit to screen size */
     height: auto; /* Auto size to preserve aspect ratio */
-    /* display: block; */
+}
+
+.centerBlock {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Limit height to 1/4 of screen */
+.limitHeight {
+    max-height: 25vh;
+    max-width: 100%; /* Make width limit to screen size */
+    width: auto;
+    height: auto; 
+}
+
+figcaption{
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+}
+summary{
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: thin solid black;
+}
+details{
+    background-color: beige;
+    border: thin solid black;
+    animation: 1s ease-in-out;
+}
+details p{
+    margin-left: 2%;
+}
+
+
+/* Limit caption width to image width */
+.captionLim figcaption{
+    text-align: justify;
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.captionLim figure{
+    display: table;
+}
+
+/* Subjective content */
+.opinion {
+    font-family: 'Averia Sans Libre', Arial, sans-serif; /* Choose Sans Serif version of font */
 }
 
 /* Logo Style */
@@ -75,7 +126,7 @@ img {
     text-decoration: none; /* Remove underline for link */
     color: navy; /* Set to black colour */
     font-weight:bold; /* Make it bold */
-    font-family: 'Averia Serif Libre', serif; 
+    font-family: 'Averia Serif Libre', Times, serif; 
     border-bottom:  1px solid transparent;
     padding: 0.1rem;
     transition: all ease 0.5s
