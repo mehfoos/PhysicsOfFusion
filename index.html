@@ -5,201 +5,129 @@
     Description: "Word of Human" website's main page.
 -->
 <html lang="en-GB">
-  <!--
+<!--
     Head
 -->
-  <head>
-    <!-- Metadata title -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Word of Human</title>
-    <meta
-      name="description"
-      content="Notes on scientific problems (Nuclear Fusion) and moral codes"
-    />
 
-    <!-- CSS link -->
-    <link rel="stylesheet" href="/css/styles.css" />
+<head>
+  <!-- Metadata title -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word of Human</title>
+  <meta name="description" content="Notes on scientific problems (Nuclear Fusion) and moral codes" />
 
-    <!-- Fonts Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS link -->
+  <link rel="stylesheet" href="/css/styles.css" />
 
-    <!-- ****** faviconit.com favicons ****** -->
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="196x196"
-      href="/favicon/favicon-192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="160x160"
-      href="/favicon/favicon-160.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/favicon/favicon-96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="/favicon/favicon-64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16.png"
-    />
-    <link rel="apple-touch-icon" href="/favicon/favicon-57.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/favicon/favicon-114.png"
-    />
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/favicon-72.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/favicon/favicon-144.png"
-    />
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/favicon/favicon-120.png"
-    />
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/favicon-76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/favicon/favicon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/favicon-180.png"
-    />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="/favicon/favicon-144.png" />
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-  </head>
+  <!-- Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap" rel="stylesheet" />
 
-  <!--
+  <!-- ****** faviconit.com favicons ****** -->
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="196x196" href="/favicon/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicon/favicon-160.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/favicon/favicon-57.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/favicon-114.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/favicon-72.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/favicon-144.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/favicon-120.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/favicon-76.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/favicon-152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon-180.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/favicon/favicon-144.png" />
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+</head>
+
+<!--
     Body
   -->
-  <body>
-    <header>
-      <div class="titleHeading">
-        <a href="/index.html"
-          ><img src="/favicon/favicon-310.png" alt="Logo"
-        /></a>
-        <h1>
-          <a href="/index.html">WORD OF HUMAN</a>
-        </h1>
-        <div></div>
-        <!-- Empty div for spacing hack -->
-      </div>
 
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item">
-            <a href="/LifeManual">Life Manual</a>
-          </li>
-          <li class="nav-item">
-            <a href="/NuclearFusion">Nuclear Fusion</a>
-          </li>
-          <li class="nav-item"><a href="/about.html">About</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header>
+    <div class="titleHeading">
+      <a href="/index.html"><img src="/favicon/favicon-310.png" alt="Logo" /></a>
+      <h1>
+        <a href="/index.html">WORD OF HUMAN</a>
+      </h1>
+      <div></div>
+      <!-- Empty div for spacing hack -->
+    </div>
 
-    <main>
-      <br />
-      <h2 style="font-size: xx-large">Hello There!</h2>
-      <p>
-        This website presents information on some of the topics that I find
-        interesting.
-      </p>
-      <p>
-        I'm convinced that the topics covered on this website, if solved or
-        developed further, has the potential to make the world a better place.
-        Specifically in terms of quality of life (perhaps
-        <a
-          href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI"
-          >HDI</a
-        >
-        is a reasonable proxy), and allowing humans to progress to a more
-        technologically advanced and humane civilisation. There are many such
-        topics, but I've narrowed down to a few that I am most passionate about
-        at this stage.
-      </p>
-      <p>
-        For scientific or engineering challenges, I try to approach the topic
-        from first principles, and cover as many branches as I could for the
-        “what-if”/”how about” scenarios, to ensure that every possible avenue
-        for solving a problem is explored.
-      </p>
-      <br />
-      <h2>Intent</h2>
-      <p>
-        My hope is that the content here serves the audience in such a way that
-        it inspires them to contribute to the field. Again, for scientific or
-        engineering challenges, I suspect that breakthroughs may come through
-        old ideas that were discarded due to limitations in the past whose
-        re-evaluation today may make it attractive given the technological and
-        scientific progress in other areas.
-      </p>
-      <p>
-        While there are many excellent resources (some of which I reference in
-        the content) on these topics, I wanted to present the topics freely, in
-        a manner I prefer, and interlace some of my personal thoughts or
-        annotations where appropriate.
-      </p>
-      <p>
-        Another intent of this effort is to help me better understand the topics
-        myself, by presenting it to others (Learning by teaching).
-      </p>
-      <br />
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a href="/LifeManual">Life Manual</a>
+        </li>
+        <li class="nav-item">
+          <a href="/NuclearFusion">Nuclear Fusion</a>
+        </li>
+        <li class="nav-item"><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <br />
+    <h2 style="font-size: xx-large">Hello There!</h2>
+    <p>
+      This website presents information on some of the topics that both
+      interest me, and has the potential to make the world a better place.
+      They have the potential to improve our quality of life (perhaps
+      <a href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a>
+      is a quantifiable proxy), and can allow humans to progress to a more
+      technologically advanced and humane civilisation. There are many such
+      topics, but I've narrowed down to a few that I am most passionate about
+      at this stage.
+    </p>
+    <br />
+    <h2>Intent</h2>
+    <p>
+      My hope is that the content here inspires you to contribute to the
+      field. While there are many excellent resources (some of which I
+      reference in the content) on these topics, I wanted to present the
+      topics in a manner I prefer, and interlace some of my personal thoughts
+      or annotations where appropriate.
+    </p>
+    <p>
+      Another intent of this effort is to help me better understand the topics
+      myself, by presenting it to others (<i>Learning by teaching</i>). For
+      scientific or engineering challenges, I try to approach the topic from
+      first principles where I can, and then cover some branches for the
+      “what-if”/”how about” scenarios, to explore alternate approaches for
+      solving a problem.
+    </p>
+    <br />
+    <details>
+      <summary>Website layout and implementation</summary>
       <h2>Website layout and implementation</h2>
       <h3>Navigation Links</h3>
       <p>
         The navigation links at the top take you to the home-page for the
         topics. The content is arranged in a hierarchical manner (tree),
-        generally, so the navigation links below should help guide with intended
-        flow of content consumption. The "Previous" and "Next" navigates through
-        topics at the same level of hierarchy (skips over detailed
-        sub-sections), while "Up" allows to navigate up the hierarchy. However,
-        this is a subjective preference, and you can use the table of contents
-        to serve you the way you desire. There may be multiple tables of
-        contents, where the hierarchy is arranged differently (categorised
-        perhaps by areas of physics, reliability of information, etc.).
+        generally, so the navigation links below should help guide with
+        intended flow of content consumption. The "Previous" and "Next"
+        navigates through topics at the same level of hierarchy (skips over
+        detailed sub-sections), while "Up" allows to navigate up the
+        hierarchy. However, this is a subjective preference, and you can use
+        the table of contents to serve you the way you desire. There may be
+        multiple tables of contents, where the hierarchy is arranged
+        differently (categorised perhaps by areas of physics, reliability of
+        information, etc.).
       </p>
       <p>
-        The vast majority of the website content is just html and css, with the
-        intent to widen reach and minimise distractions from the content.
+        The vast majority of the website content is just html and css, with
+        the intent to widen reach and minimise distractions from the content.
         Calculators and scripts may be present on certain pages, for
         demonstration or educational purposes.
       </p>
@@ -221,29 +149,31 @@
 
       <h3>Collapsible Sections:</h3>
       <p>
-        There may be collapsible sections that provide more details on a topic.
-        The intent here is to provide the reader with the choice of abstraction
-        of detail. Detailed information, including any mathematical equations
-        and links to related content are generally included in collapsible
-        sections.
+        There may be collapsible sections that provide more details on a
+        topic. The intent here is to provide the reader with the choice of
+        abstraction of detail. Detailed information, including any
+        mathematical equations and links to related content are generally
+        included in collapsible sections.
       </p>
       <details>
         <summary>Example Collapsible:</summary>
         <p>This is the detailed information available.</p>
       </details>
-      <br />
-    </main>
-    <footer>
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-disable"><a>Prev</a></li>
-          <li class="nav-disable"><a>Up</a></li>
-          <li class="nav-disable"><a>Next</a></li>
-          <li class="nav-item">
-            <a href="disclaimer.html">Disclaimer & Copyright</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+    </details>
+    <br />
+  </main>
+  <footer>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-disable"><a>Prev</a></li>
+        <li class="nav-disable"><a>Up</a></li>
+        <li class="nav-disable"><a>Next</a></li>
+        <li class="nav-item">
+          <a href="disclaimer.html">Disclaimer & Copyright</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
