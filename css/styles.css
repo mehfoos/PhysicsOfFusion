@@ -4,6 +4,57 @@ Last Major Update: 2022
 Description: Stylesheet for formatting the page
 */
 
+/* Static fonts */
+@font-face {
+    font-family: "Averia Serif Libre";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/AveriaSerifLibre-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Serif Libre";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/AveriaSerifLibre-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Serif Libre";
+    font-style: italic;
+    font-weight: normal;
+    src: url("/fonts/AveriaSerifLibre-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Serif Libre";
+    font-style: italic;
+    font-weight: bold;
+    src: url("/fonts/AveriaSerifLibre-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Sans Libre";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/AveriaSansLibre-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Sans Libre";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/AveriaSansLibre-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Sans Libre";
+    font-style: italic;
+    font-weight: normal;
+    src: url("/fonts/AveriaSansLibre-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Averia Sans Libre";
+    font-style: italic;
+    font-weight: bold;
+    src: url("/fonts/AveriaSansLibre-BoldItalic.ttf") format("truetype");
+}
+
+
 /* Basic Styles */
 html {
     font-size: 100%; /* User font size */
