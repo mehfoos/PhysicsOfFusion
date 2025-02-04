@@ -168,57 +168,9 @@
 
       <p>
         This is a crude simplification, and QCD currently provides the most
-        comprehensive framework that describes these interactions. See the video
-        from PBS below for an overview of QCD.
+        comprehensive framework that describes these interactions. See the
+        videos from PBS below for an overview of QCD and the nuclear force.
       </p>
-
-      <div
-        class="video"
-        style="
-          background-image: url('https://i.ytimg.com/vi/y1px8hBl7zg/hqdefault.jpg');
-        "
-      >
-        <iframe
-          class="video__iframe"
-          data-src="https://www.youtube-nocookie.com/embed/y1px8hBl7zg"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
-        ></iframe>
-        <form class="video__notice">
-          <p>
-            This embedded content is from YouTube. YouTube may collect personal
-            data and track your viewing behaviour, so such content will only be
-            loaded after you consent to their use of cookies and similar
-            technologies as described in their
-            <a href="https://www.youtube.com/t/privacy">privacy policy</a>.
-          </p>
-          <button>I consent to loading content from YouTube</button>
-        </form>
-      </div>
-
-      <script>
-        function activateVideos() {
-          const iframes = document.querySelectorAll(
-            '.video__iframe[data-src*="youtube-nocookie.com"]'
-          );
-          iframes.forEach((iframe) => {
-            iframe.src = iframe.dataset.src;
-          });
-        }
-
-        function attachEvents() {
-          const notices = document.querySelectorAll(".video__notice");
-          notices.forEach((notice) => {
-            notice.addEventListener("submit", (event) => {
-              activateVideos();
-              event.preventDefault();
-            });
-          });
-        }
-
-        attachEvents();
-      </script>
 
       <details>
         <summary>References and Notes</summary>
@@ -273,6 +225,86 @@
           may return to in the future.
         </p>
       </details>
+      <br />
+
+      <h2>Relevant external content:</h2>
+      <p class="opinion">
+        The PBS Space Time channel on YouTube provides a great overview of QCD
+        and nuclear force.
+      </p>
+      <br />
+      <div
+        class="video"
+        style="
+          background-image: url('https://i.ytimg.com/vi/y1px8hBl7zg/hqdefault.jpg');
+        "
+      >
+        <iframe
+          class="video__iframe"
+          data-src="https://www.youtube-nocookie.com/embed/y1px8hBl7zg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+        <form class="video__notice">
+          <p>
+            This embedded content is from YouTube. YouTube may collect personal
+            data and track your viewing behaviour, so such content will only be
+            loaded after you consent to their use of cookies and similar
+            technologies as described in their
+            <a href="https://www.youtube.com/t/privacy">privacy policy</a>.
+          </p>
+          <button>I consent to loading content from YouTube</button>
+        </form>
+      </div>
+      <br />
+      <div
+        class="video"
+        style="
+          background-image: url('https://i.ytimg.com/vi/E8hyodMhbRw/hqdefault.jpg');
+        "
+      >
+        <iframe
+          class="video__iframe"
+          data-src="https://www.youtube-nocookie.com/embed/E8hyodMhbRw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"
+        ></iframe>
+        <form class="video__notice">
+          <p>
+            This embedded content is from YouTube. YouTube may collect personal
+            data and track your viewing behaviour, so such content will only be
+            loaded after you consent to their use of cookies and similar
+            technologies as described in their
+            <a href="https://www.youtube.com/t/privacy">privacy policy</a>.
+          </p>
+          <button>I consent to loading content from YouTube</button>
+        </form>
+      </div>
+
+      <script>
+        function activateVideos() {
+          const iframes = document.querySelectorAll(
+            '.video__iframe[data-src*="youtube-nocookie.com"]'
+          );
+          iframes.forEach((iframe) => {
+            iframe.src = iframe.dataset.src;
+          });
+        }
+
+        function attachEvents() {
+          const notices = document.querySelectorAll(".video__notice");
+          notices.forEach((notice) => {
+            notice.addEventListener("submit", (event) => {
+              activateVideos();
+              event.preventDefault();
+            });
+          });
+        }
+
+        attachEvents();
+      </script>
     </main>
     <!-- End of Main content -->
 

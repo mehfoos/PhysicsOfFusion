@@ -285,6 +285,10 @@ details p,
     background-color: black;
     background-position: center center;
     background-size: cover;
+    max-width: max(60vw,100vh);
+    width: auto;
+    height: auto;
+    margin: auto;
   }
 .video::before {
     display: block;
