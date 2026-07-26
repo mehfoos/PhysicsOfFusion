@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- 
     Author: Mehfoos
     Last Major Update: 2024
@@ -18,34 +18,8 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="/css/styles.css" />
 
-    <!-- MathJax -->
-    <script
-      id="MathJax-script"
-      async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-    ></script>
-
-    <!-- ****** faviconit.com favicons ****** -->
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="/favicon/favicon-64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16.png"
-    />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
   </head>
 
   <!--
@@ -95,15 +69,45 @@
       </p>
       <p>
         For a typical reaction considered for energy release, we have:
-        $$Reactants \rightarrow Products + Energy $$
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mrow>
+            <mi>Reactants</mi>
+            <mo>&#x2192;</mo>
+            <mi>Products</mi>
+            <mo>+</mo>
+            <mi>Energy</mi>
+          </mrow>
+        </math>
       </p>
       <p>
         Where, the energy released is related to mass difference as (Note that
         <i>'c'</i> denotes speed of light):
       </p>
       <p style="text-align: center">
-        $${Energy} = \left({Mass}_{Products} - {Mass}_{Reactants}\right)\cdot
-        c^2 $$
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mrow>
+            <mi>Energy</mi>
+            <mo>=</mo>
+            <mrow>
+              <mo>(</mo>
+              <msub>
+                <mi>Mass</mi>
+                <mi>Products</mi>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <mi>Mass</mi>
+                <mi>Reactants</mi>
+              </msub>
+              <mo>)</mo>
+            </mrow>
+            <mo>&#xD7;</mo>
+            <msup>
+              <mi>c</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </math>
       </p>
       <p>
         The release of energy only applies to exothermic reactions. For

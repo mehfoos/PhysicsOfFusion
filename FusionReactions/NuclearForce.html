@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- 
     Author: Mehfoos
     Last Major Update: 2024-07
@@ -17,27 +17,8 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="/css/styles.css" />
 
-    <!-- ****** faviconit.com favicons ****** -->
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="/favicon/favicon-64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16.png"
-    />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
   </head>
 
   <body>
@@ -237,14 +218,21 @@
       <div
         class="video"
         style="
-          background-image: url('https://i.ytimg.com/vi/y1px8hBl7zg/hqdefault.jpg');
+          background-image: url(&quot;https://i.ytimg.com/vi/y1px8hBl7zg/hqdefault.jpg&quot;);
         "
       >
         <iframe
           class="video__iframe"
           data-src="https://www.youtube-nocookie.com/embed/y1px8hBl7zg"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
           allowfullscreen="allowfullscreen"
         ></iframe>
         <form class="video__notice">
@@ -262,14 +250,21 @@
       <div
         class="video"
         style="
-          background-image: url('https://i.ytimg.com/vi/E8hyodMhbRw/hqdefault.jpg');
+          background-image: url(&quot;https://i.ytimg.com/vi/E8hyodMhbRw/hqdefault.jpg&quot;);
         "
       >
         <iframe
           class="video__iframe"
           data-src="https://www.youtube-nocookie.com/embed/E8hyodMhbRw"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
           allowfullscreen="allowfullscreen"
         ></iframe>
         <form class="video__notice">
@@ -287,7 +282,7 @@
       <script>
         function activateVideos() {
           const iframes = document.querySelectorAll(
-            '.video__iframe[data-src*="youtube-nocookie.com"]'
+            '.video__iframe[data-src*="youtube-nocookie.com"]',
           );
           iframes.forEach((iframe) => {
             iframe.src = iframe.dataset.src;
